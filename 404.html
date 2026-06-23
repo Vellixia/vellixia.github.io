@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)" />
+  <title>404 — Page not found · Vellixia</title>
+  <meta name="description" content="The page you're looking for doesn't exist." />
+  <meta name="robots" content="noindex" />
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("vx-theme");
+        var sysDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved || (sysDark ? "dark" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" href="https://github.com/Vellixia.png?v=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <main class="error-page">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page not found</h1>
+      <p class="error-desc">The path you took doesn't lead anywhere in this realm. Try one of the routes below, or head back home.</p>
+      <div class="hero-cta">
+        <a href="./" class="btn btn-primary">← Back to home</a>
+        <a href="./#projects" class="btn btn-ghost">See projects</a>
+        <a href="https://github.com/Vellixia" rel="noopener" target="_blank" class="btn btn-ghost">GitHub →</a>
+      </div>
+    </div>
+  </main>
+  <script>
+    // Reuse theme toggle from index.html if present; otherwise no toggle on 404
+  </script>
+</body>
+</html>
