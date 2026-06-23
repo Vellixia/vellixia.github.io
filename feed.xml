@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Vellixia</title>
+    <link>https://vellixia.github.io/</link>
+    <description>A realm of swift clarity — open-source tools for AI agents. Local-first, self-hosted, fast.</description>
+    <language>en-us</language>
+    <atom:link href="https://vellixia.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <dc:creator>Andres Holivin</dc:creator>
+    <lastBuildDate>TBD</lastBuildDate>
+
+    <item>
+      <title>Vellixia launches: a realm of swift clarity</title>
+      <link>https://vellixia.github.io/</link>
+      <description>Announcing the Vellixia organization and its first public projects: Glia (AI agent skill synthesizer) and Cairn (context &amp; reliability layer for AI agents).</description>
+      <pubDate>TBD</pubDate>
+      <guid isPermaLink="true">https://vellixia.github.io/#launch</guid>
+    </item>
+
+    <item>
+      <title>Glia — AI agent skill synthesizer</title>
+      <link>https://github.com/Vellixia/Glia</link>
+      <description>Local-first, air-gappable, graph+vector+causal retrieval over a community catalog. Rust CLI + Hub, SurrealDB, OpenBao, candle embeddings.</description>
+      <pubDate>TBD</pubDate>
+      <guid isPermaLink="true">https://github.com/Vellixia/Glia</guid>
+    </item>
+
+    <item>
+      <title>Cairn — context &amp; reliability layer for AI agents</title>
+      <link>https://github.com/Vellixia/Cairn</link>
+      <description>The open-source context &amp; reliability layer for AI agents — memory, lean context, guardrails, and multi-device sync in one self-hosted Rust binary.</description>
+      <pubDate>TBD</pubDate>
+      <guid isPermaLink="true">https://github.com/Vellixia/Cairn</guid>
+    </item>
+  </channel>
+</rss>
