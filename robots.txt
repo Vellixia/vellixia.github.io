@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vellixia.github.io/sitemap.xml
