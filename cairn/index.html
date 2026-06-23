@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)" />
+  <title>Cairn · Vellixia</title>
+  <meta name="description" content="Cairn — open-source context & reliability layer for AI agents. Memory, lean context, guardrails, multi-device sync." />
+  <link rel="canonical" href="https://vellixia.github.io/cairn/" />
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("vx-theme");
+        var sysDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved || "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" href="https://github.com/Vellixia.png?v=1" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cairn · Vellixia" />
+  <meta property="og:description" content="Open-source context & reliability layer for AI agents — memory, lean context, guardrails." />
+  <meta property="og:image" content="https://vellixia.github.io/og.png" />
+  <meta property="og:url" content="https://vellixia.github.io/cairn/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Cairn",
+    "description": "Open-source context & reliability layer for AI agents — memory, lean context, guardrails, multi-device sync.",
+    "codeRepository": "https://github.com/Vellixia/Cairn",
+    "programmingLanguage": "Rust",
+    "author": { "@type": "Organization", "name": "Vellixia", "url": "https://github.com/Vellixia" },
+    "license": "https://www.apache.org/licenses/LICENSE-2.0"
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="hero" style="min-height: auto; padding-bottom: 20px;">
+    <nav class="nav">
+      <a href="../" class="brand" aria-label="Vellixia home">
+        <img src="https://github.com/Vellixia.png?v=1" alt="" class="brand-mark" />
+        <span class="brand-name">Vellixia</span>
+      </a>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="../#projects">Projects</a>
+        <a href="https://github.com/Vellixia/Cairn" rel="noopener" target="_blank">GitHub →</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="moon">🌙</span><span class="sun">☀️</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-hero">
+      <div class="breadcrumb"><a href="../">Vellixia</a> / Cairn</div>
+      <h1>Cairn</h1>
+      <p class="tagline">The open-source context & reliability layer for AI agents — memory, lean context, guardrails, and multi-device sync in one self-hosted Rust binary.</p>
+      <div class="meta-row">
+        <span class="topic">Rust</span>
+        <span class="topic">MCP server</span>
+        <span class="topic">Local-first</span>
+        <span class="topic">Self-hosted</span>
+        <span class="topic">Agent memory</span>
+        <span class="meta-pill">★ 0</span>
+        <a href="https://github.com/Vellixia/Cairn" rel="noopener" target="_blank" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.88rem;">View on GitHub →</a>
+      </div>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature">
+        <h3>🧠 Agent memory</h3>
+        <p>Persistent, queryable memory for AI agents — across sessions, devices, and tools.</p>
+      </article>
+      <article class="feature">
+        <h3>📦 Lean context</h3>
+        <p>Smart retrieval keeps only what matters in the LLM context window. Lower tokens, sharper answers.</p>
+      </article>
+      <article class="feature">
+        <h3>🛡️ Guardrails</h3>
+        <p>Built-in reliability layer — schema validation, output checking, and policy enforcement.</p>
+      </article>
+      <article class="feature">
+        <h3>🔁 Multi-device sync</h3>
+        <p>Pick up where you left off — sync state across your laptop, server, and dev environments.</p>
+      </article>
+      <article class="feature">
+        <h3>🔌 MCP server</h3>
+        <p>Speaks the Model Context Protocol. Plugs into Claude Code, Cursor, and any MCP-compatible client.</p>
+      </article>
+      <article class="feature">
+        <h3>⚙️ One Rust binary</h3>
+        <p>Single self-hosted binary. No Docker, no service mesh — just download, run, configure.</p>
+      </article>
+    </div>
+
+    <section class="section">
+      <div class="section-label">Get started</div>
+      <h2 class="section-title">Try Cairn</h2>
+      <p class="section-lead">Cairn is open-source under Apache-2.0. Run the binary, point your MCP client at it, and start giving your agents memory.</p>
+      <div class="hero-cta">
+        <a href="https://github.com/Vellixia/Cairn#installation" rel="noopener" target="_blank" class="btn btn-primary">Installation guide</a>
+        <a href="https://github.com/Vellixia/Cairn/blob/main/README.md" rel="noopener" target="_blank" class="btn btn-ghost">Read the README</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="https://github.com/Vellixia.png?v=1" alt="" class="brand-mark small" />
+        <span>Vellixia</span>
+      </div>
+      <div class="footer-meta">
+        <span>Jakarta, Indonesia · Remote-first</span>
+        <span>·</span>
+        <a href="../">Home</a>
+        <span>·</span>
+        <a href="../feed.xml">RSS</a>
+      </div>
+      <div class="footer-tag">A realm of swift clarity.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("themeToggle")?.addEventListener("click", () => {
+      const cur = document.documentElement.getAttribute("data-theme") || "dark";
+      const next = cur === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("vx-theme", next); } catch (_) {}
+    });
+  </script>
+</body>
+</html>
