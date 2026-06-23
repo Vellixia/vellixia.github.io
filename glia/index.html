@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)" />
+  <title>Glia · Vellixia</title>
+  <meta name="description" content="Glia — AI agent skill synthesizer. Local-first, air-gappable, graph+vector+causal retrieval over a community catalog." />
+  <link rel="canonical" href="https://vellixia.github.io/glia/" />
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("vx-theme");
+        var sysDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved || "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" href="https://github.com/Vellixia.png?v=1" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Glia · Vellixia" />
+  <meta property="og:description" content="AI agent skill synthesizer. Local-first, air-gappable, graph+vector+causal retrieval." />
+  <meta property="og:image" content="https://vellixia.github.io/og.png" />
+  <meta property="og:url" content="https://vellixia.github.io/glia/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Glia",
+    "description": "AI agent skill synthesizer — local-first, air-gappable, graph+vector+causal retrieval over a community catalog.",
+    "codeRepository": "https://github.com/Vellixia/Glia",
+    "programmingLanguage": "Rust",
+    "author": { "@type": "Organization", "name": "Vellixia", "url": "https://github.com/Vellixia" },
+    "license": "https://www.apache.org/licenses/LICENSE-2.0"
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="hero" style="min-height: auto; padding-bottom: 20px;">
+    <nav class="nav">
+      <a href="../" class="brand" aria-label="Vellixia home">
+        <img src="https://github.com/Vellixia.png?v=1" alt="" class="brand-mark" />
+        <span class="brand-name">Vellixia</span>
+      </a>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="../#projects">Projects</a>
+        <a href="https://github.com/Vellixia/Glia" rel="noopener" target="_blank">GitHub →</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="moon">🌙</span><span class="sun">☀️</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-hero">
+      <div class="breadcrumb"><a href="../">Vellixia</a> / Glia</div>
+      <h1>Glia</h1>
+      <p class="tagline">AI agent skill synthesizer — local-first, air-gappable, graph+vector+causal retrieval over a community catalog.</p>
+      <div class="meta-row">
+        <span class="topic">Rust</span>
+        <span class="topic">AI agents</span>
+        <span class="topic">Local-first</span>
+        <span class="topic">Self-hosted</span>
+        <span class="topic">Air-gapped</span>
+        <span class="meta-pill">★ 0</span>
+        <a href="https://github.com/Vellixia/Glia" rel="noopener" target="_blank" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.88rem;">View on GitHub →</a>
+      </div>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature">
+        <h3>🔌 Local-first CLI + Hub</h3>
+        <p>Rust CLI plus a self-hosted Hub. No cloud required — your data stays on your machine.</p>
+      </article>
+      <article class="feature">
+        <h3>🧠 Graph + vector + causal retrieval</h3>
+        <p>Hybrid retrieval combining vector similarity, graph traversal, and causal chains — not just one or the other.</p>
+      </article>
+      <article class="feature">
+        <h3>🔒 Air-gappable</h3>
+        <p>Designed to run with zero internet. Embeddings, retrieval, and skill composition all work offline.</p>
+      </article>
+      <article class="feature">
+        <h3>🧩 Community skill catalog</h3>
+        <p>Discover, install, and compose agent skills from a shared catalog — or run your own private one.</p>
+      </article>
+      <article class="feature">
+        <h3>🗄️ SurrealDB + OpenBao</h3>
+        <p>SurrealDB for the unified graph/vector store, OpenBao for secrets — both self-hostable.</p>
+      </article>
+      <article class="feature">
+        <h3>🤖 candle embeddings</h3>
+        <p>Local embeddings via Hugging Face candle — no API keys, no rate limits, no data leaving the host.</p>
+      </article>
+    </div>
+
+    <section class="section">
+      <div class="section-label">Get started</div>
+      <h2 class="section-title">Try Glia</h2>
+      <p class="section-lead">Glia is open-source under Apache-2.0. Install the CLI, point it at your Hub, and start composing agent skills.</p>
+      <div class="hero-cta">
+        <a href="https://github.com/Vellixia/Glia#installation" rel="noopener" target="_blank" class="btn btn-primary">Installation guide</a>
+        <a href="https://github.com/Vellixia/Glia/blob/main/README.md" rel="noopener" target="_blank" class="btn btn-ghost">Read the README</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="https://github.com/Vellixia.png?v=1" alt="" class="brand-mark small" />
+        <span>Vellixia</span>
+      </div>
+      <div class="footer-meta">
+        <span>Jakarta, Indonesia · Remote-first</span>
+        <span>·</span>
+        <a href="../">Home</a>
+        <span>·</span>
+        <a href="../feed.xml">RSS</a>
+      </div>
+      <div class="footer-tag">A realm of swift clarity.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("themeToggle")?.addEventListener("click", () => {
+      const cur = document.documentElement.getAttribute("data-theme") || "dark";
+      const next = cur === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("vx-theme", next); } catch (_) {}
+    });
+  </script>
+</body>
+</html>
